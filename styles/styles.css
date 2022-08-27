@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  text-align: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+h2 {
+  color: hsl(229, 23%, 23%);
+}
+
+.img-top {
+  position: absolute;
+  width: 50%;
+  left: -3%;
+  bottom: 45%;
+  z-index: -1;
+}
+.img-bot {
+  position: absolute;
+  width: 50%;
+  bottom: -40%;
+  right: -7%;
+  z-index: -1;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-container {
+  background-color: #fff;
+  height: 520px;
+  width: 342px;
+  border-radius: 10px;
+  border: 1px solid #b9fff8;
+  overflow: hidden;
+}
+.card-header {
+  display: flex;
+  justify-content: center;
+  height: 25%;
+  background-image: url('/images/bg-pattern-card.svg');
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: static;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 20%;
+}
+.profile-image {
+  display: flex;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  bottom: 62%;
+  position: absolute;
+}
+.card-footer {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gray-text {
+  color: hsl(0, 0%, 59%);
+}
+.dark-gray-text {
+  color: hsl(229, 23%, 23%);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.user-location {
+  margin: 1rem 0 1.5rem;
+}
+.text-info {
+  margin-top: 0.4rem;
+  text-transform: capitalize;
+}
+.user-age {
+  font-weight: normal;
+}
+@media (max-width: 1500px) {
+  .main-content {
+    min-width: 342px;
+    min-height: 520px;
+  }
+}
+@media (max-width: 360px) {
+  .main-content {
+    min-width: 342px;
+    min-height: 520px;
+  }
+  .profile-image {
+    display: flex;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    bottom: 60%;
+    position: absolute;
+  }
+}
