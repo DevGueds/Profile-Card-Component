@@ -54,7 +54,7 @@ h2 {
   display: flex;
   justify-content: center;
   height: 25%;
-  background-image: url('/images/bg-pattern-card.svg');
+  background-image: url('./images/bg-pattern-card.svg');
 }
 .card-content {
   display: flex;
